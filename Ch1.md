@@ -1,7 +1,7 @@
 # Getting Started
 ## ch 1 springboot setup - Just setting up Springboot project
 Introduces a simple get route.
-![Get Route Working](\assets\get-route-working.png)
+
 Tutorials include:
 - https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java
 - https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack
@@ -27,3 +27,6 @@ These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
+### Notes
+Here is proof the GET route is working
+![Get Route Working](./assets/get-route-working.png)
