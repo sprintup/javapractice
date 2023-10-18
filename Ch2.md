@@ -32,4 +32,4 @@ Use cases can be broken down by 'As When Then' format. Or in other words 'As a <
 
 ## Notes
 - Sometimes VScode trips, so you have to restart it.
-![response route working](assets\response-working.png)
+![response route working](./assets/response-working.png)
