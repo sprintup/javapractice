@@ -1,8 +1,7 @@
 package com.javapractice.gateways;
 
 
-public interface ITodoRepository {
+public interface ITodoRepository extends ILogger {
     public int addTodo(String todo);
-    public int deleteTodo(int id);
 }
 
