@@ -15,6 +15,9 @@ public class addTodoInteractor implements IaddTodo{
         this.todoRepository = todoRepository;
     }
 
+    // as a user
+    // when I add a todo
+    // then I should see the todo in the list 
     @Override
     public TodoResponse addTodo(TodoRequest request) {
         this.todoRepository.addTodo(
