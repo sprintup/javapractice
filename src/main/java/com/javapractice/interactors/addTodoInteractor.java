@@ -8,10 +8,10 @@ import com.javapractice.gateways.ITodoRepository;
 import com.javapractice.interactors.interfaces.IaddTodo;
 
 @Service
-public class addTodoInteractor implements IaddTodo{
+public class AddTodoInteractor implements IaddTodo{
     private final ITodoRepository todoRepository;
     
-    public addTodoInteractor(ITodoRepository todoRepository) {
+    public AddTodoInteractor(ITodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 
