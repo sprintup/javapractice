@@ -7,6 +7,11 @@ The benefits include:
   - the interactors can be called by controllers or tests
 - layers of abstraction called boundaries that separate application code from concrete implementation details, using interfaces.
   - this benefit allows for SOLID Principles to be practiced
+  - single responsibility principle - every function does one and only one thing
+  - open/closed principle - code is open to extension and closed to modification
+  - liskov principle - class object has all members of sub classes, so it doesn't get bloated
+  - interface segregation principle - interfaces shouldn't implement any members they don't need to
+  - dependency inversion principle - depend on higher level abstractions and concrete implementations
 - more maintainable, because gateways can be switch out easily, preventing vendor lock-in. 
 
 ### Boundaries
