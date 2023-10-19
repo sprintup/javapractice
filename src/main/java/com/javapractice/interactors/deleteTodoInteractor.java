@@ -25,7 +25,7 @@ public class DeleteTodoInteractor implements IdeleteTodoInteractor {
     // Whenever you open a clean code architecture project, you should automatically be looking for the interactors. 
     // As a matter of convention, the constructor should have a use case in "As", "When", "Then" format.
 
-    //As a user
+    // As a user
     // When I delete an todo
     // Then I want the item deleted and a log persisted to long term storage
     @Override
