@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 class TodoController {
 	private final IaddTodo addTodoInteractor;
 
-	//constructor that injects addTodoInteractor
+	//As you can see, the controller's constructor has the interactor injected, similar to how the repository is injected into the interactor.
 	public TodoController(IaddTodo addTodoInteractor) {
 		this.addTodoInteractor = addTodoInteractor;
 	}
@@ -25,6 +25,7 @@ class TodoController {
 		return "Hello, World 6!";
 	}
 
+	// This is where it all starts
 	//endpoint for addTodoInteractor
 	@PostMapping("/addTodo")
 	public TodoResponse addTodo(@RequestBody TodoRequest request) {
