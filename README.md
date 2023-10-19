@@ -8,4 +8,3 @@ The branches have a cascade of pull requests, so ch1 pulls against main, ch2 pul
 
 I'm trying to keep the readmes for the various chapters updated in the main branch, but it's best to check out that branch to view the most up to date readme.
 
-https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html
