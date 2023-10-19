@@ -13,12 +13,12 @@ import com.javapractice.gateways.ITodoRepository;
 import com.javapractice.interactors.interfaces.IdeleteTodoInteractor;
 
 @Service
-public class deleteTodoInteractor implements IdeleteTodoInteractor {
+public class DeleteTodoInteractor implements IdeleteTodoInteractor {
 
     private final ITodoRepository todoRepository;
     private final ILoki loki;
 
-    public deleteTodoInteractor(ITodoRepository todoRepository, ILoki loki) {
+    public DeleteTodoInteractor(ITodoRepository todoRepository, ILoki loki) {
         this.todoRepository = todoRepository;
         this.loki = loki;
     }
