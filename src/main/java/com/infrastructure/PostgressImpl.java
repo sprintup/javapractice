@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.javapractice.domain.Request.DeleteTodoRequest;
 import com.javapractice.gateways.ITodoRepository;
 
+// Since the implementation extends the shared interface, we know it has deleteTodo() method.
 @Repository
 public class PostgressImpl implements ITodoRepository {
 
@@ -46,6 +47,7 @@ public class PostgressImpl implements ITodoRepository {
         }
     }
 
+    // this is the implementation of the ILogger interface.
     @Override
     public String deleteTodo(DeleteTodoRequest request) {
         // for example purposes only

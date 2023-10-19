@@ -3,30 +3,19 @@ package com.infrastructure;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.Duration;
 
 import org.springframework.stereotype.Repository;
 
 import com.javapractice.domain.Request.DeleteTodoRequest;
-import com.javapractice.gateways.ILogger;
 import com.javapractice.gateways.ILoki;
-import com.javapractice.gateways.ITodoRepository;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.time.Duration;
-import java.io.IOException;
 
+// Since the implementation extends the shared interface, we know it has deleteTodo() method.
 @Repository
 public class LokiImpl implements ILoki {
     private static final String LOKI_ENDPOINT = "http://loki-address:3100/loki/api/v1/push";
@@ -36,6 +25,7 @@ public class LokiImpl implements ILoki {
         .build();
 
 
+    // This is the implementation of the ILogger interface.
     @Override
     public String deleteTodo(DeleteTodoRequest request) {
         try {

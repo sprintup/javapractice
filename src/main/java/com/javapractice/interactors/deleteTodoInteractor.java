@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.stereotype.Service;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
 import com.javapractice.domain.Request.DeleteTodoRequest;
 import com.javapractice.domain.Response.DeleteTodoResponse;
 import com.javapractice.gateways.ILogger;
@@ -22,12 +23,16 @@ public class deleteTodoInteractor implements IdeleteTodoInteractor {
         this.loki = loki;
     }
 
+    // Whenever you open a clean code architecture project, you should automatically be looking for the interactors. 
+    // As a matter of convention, the constructor should have a use case in "As", "When", "Then" format.
+
     //As a user
     // When I delete an todo
     // Then I want the item deleted and a log persisted to long term storage
     @Override
     public DeleteTodoResponse deleteTodo(DeleteTodoRequest request) {
         
+        // We can use the shape of the ILogger to ensure all the concrete implementations have the '.deleteTodo()' method seen on line 48.
         ArrayList<ILogger> loggers = getLoggers();
 
 
