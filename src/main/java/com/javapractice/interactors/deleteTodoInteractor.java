@@ -8,11 +8,11 @@ import com.javapractice.gateways.ITodoRepository;
 import com.javapractice.interactors.interfaces.IdeleteTodoInteractor;
 
 @Service
-public class deleteTodoInteractor implements IdeleteTodoInteractor {
+public class DeleteTodoInteractor implements IdeleteTodoInteractor {
 
     private final ITodoRepository todoRepository;
 
-    public deleteTodoInteractor(ITodoRepository todoRepository) {
+    public DeleteTodoInteractor(ITodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 

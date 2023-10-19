@@ -6,7 +6,7 @@ import com.javapractice.domain.Request.DeleteTodoRequest;
 import com.javapractice.domain.Request.TodoRequest;
 import com.javapractice.domain.Response.DeleteTodoResponse;
 import com.javapractice.domain.Response.TodoResponse;
-import com.javapractice.interactors.deleteTodoInteractor;
+import com.javapractice.interactors.DeleteTodoInteractor;
 import com.javapractice.interactors.interfaces.IaddTodo;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 class TodoController {
 	private final IaddTodo addTodoInteractor;
-	private final deleteTodoInteractor deletedTodoLogInteractor;
+	private final DeleteTodoInteractor deletedTodoLogInteractor;
 
 	//constructor that injects addTodoInteractor
 	public TodoController(IaddTodo addTodoInteractor,
-		deleteTodoInteractor deletedTodoLogInteractor) {
+		DeleteTodoInteractor deletedTodoLogInteractor) {
 		this.addTodoInteractor = addTodoInteractor;
 		this.deletedTodoLogInteractor = deletedTodoLogInteractor;
 	}
