@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
 import com.javapractice.domain.Request.DeleteTodoRequest;
 import com.javapractice.domain.Response.DeleteTodoResponse;
 import com.javapractice.gateways.ILogger;
