@@ -10,4 +10,4 @@ When I delete an todo
 Then I want the item deleted and a log persisted to long term storage
 
 ## Notes
-![interfaces response](./assets/response-working.png)
+![interfaces response](assets/ch3-interface-used.png)
