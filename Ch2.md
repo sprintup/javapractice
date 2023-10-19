@@ -37,4 +37,5 @@ Use cases can be broken down by 'As When Then' format. Or in other words 'As a <
 
 ## Notes
 - Sometimes VScode trips, so you have to restart it.
+- The dependency injection is possible because of the [inversion of control (ioc) container](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html), which in no necessary or limited to only java. 
 ![response route working](./assets/response-working.png)
