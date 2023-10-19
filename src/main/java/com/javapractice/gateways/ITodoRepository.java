@@ -1,8 +1,7 @@
 package com.javapractice.gateways;
 
-
-public interface ITodoRepository {
+//In other words, the injected Interfaces extend the shared interface.
+public interface ITodoRepository extends ILogger {
     public int addTodo(String todo);
-    public int deleteTodo(int id);
 }
 
