@@ -1,5 +1,9 @@
-# javapractice
+# Javapractice
 
+A repo to practice some java
+
+Solid Principles
+=======
 A repo to practice some java.
 
 It's broken down into chapters that are in separate branches. 
