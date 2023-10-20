@@ -6,7 +6,7 @@ import com.javapractice.domain.Request.DeleteTodoRequest;
 import com.javapractice.domain.Response.DeleteTodoResponse;
 import com.javapractice.gateways.ILoki;
 import com.javapractice.gateways.ITodoRepository;
-import com.javapractice.interactors.deleteTodoInteractor;
+import com.javapractice.interactors.DeleteTodoInteractor;
 import com.javapractice.interactors.interfaces.IdeleteTodoInteractor;
 import com.javapractice.mocks.PostgressMock;
 import com.javapractice.mocks.LokiMock;
@@ -19,7 +19,7 @@ public class DeleteTodoTests {
     public DeleteTodoTests(){
         todoRepository = new PostgressMock();
         loki = new LokiMock();
-        deleteTodoInteractor = new deleteTodoInteractor(todoRepository, loki);
+        deleteTodoInteractor = new DeleteTodoInteractor(todoRepository, loki);
     }
 
     // name the test method uow_ic_er()
@@ -41,6 +41,6 @@ public class DeleteTodoTests {
         );
         
         // Assert
-        Assertions.assertEquals(5, result, "2 + 3 should equal 5");
+        Assertions.assertEquals("Todo with ID 1 has been deleted.| Wrote to file and Logged to Loki", result.message, "response does not match");
     }
 }

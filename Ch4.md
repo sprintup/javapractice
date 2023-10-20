@@ -12,4 +12,5 @@ The name of the test should explain what unit of work, initial condition and exp
 You can also test expected exceptions. 
 
 ### Notes
+- ![test worked](./assets/test-worked.png)
 - [PR - Ch4: tests end ](https://github.com/sprintup/javapractice/pull/9/files)
