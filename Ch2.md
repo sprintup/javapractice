@@ -7,6 +7,11 @@ The benefits include:
   - the interactors can be called by controllers or tests
 - layers of abstraction called boundaries that separate application code from concrete implementation details, using interfaces.
   - this benefit allows for SOLID Principles to be practiced
+  - single responsibility principle - every function does one and only one thing
+  - open/closed principle - code is open to extension and closed to modification
+  - liskov principle - class object has all members of sub classes, so it doesn't get bloated
+  - interface segregation principle - interfaces shouldn't implement any members they don't need to
+  - dependency inversion principle - depend on higher level abstractions and concrete implementations
 - more maintainable, because gateways can be switch out easily, preventing vendor lock-in. 
 
 ### Boundaries
@@ -32,4 +37,5 @@ Use cases can be broken down by 'As When Then' format. Or in other words 'As a <
 
 ## Notes
 - Sometimes VScode trips, so you have to restart it.
-![response route working](assets\response-working.png)
+- The dependency injection is possible because of the [inversion of control (ioc) container](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html), which in no necessary or limited to only java. 
+![response route working](./assets/response-working.png)
