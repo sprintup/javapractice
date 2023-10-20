@@ -28,5 +28,6 @@ These additional references should also help you:
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
 ### Notes
-Here is proof the GET route is working
-![Get Route Working](./assets/get-route-working.png)
+- Here is proof the GET route is working
+  - ![Get Route Working](./assets/get-route-working.png)
+- PR - [Ch1: readme updates](https://github.com/sprintup/javapractice/pull/2/files)
