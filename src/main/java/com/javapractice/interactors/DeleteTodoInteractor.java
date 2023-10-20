@@ -21,7 +21,7 @@ public class DeleteTodoInteractor implements IdeleteTodoInteractor {
     // As a user
     // When I delete an todo
     // Then I want the item deleted and a log persisted to long term storage
-    public DeleteTodoInteractor(ITodoRepository todoRepository) {
+    public DeleteTodoInteractor(ITodoRepository todoRepository, ILoki loki) {
         this.todoRepository = todoRepository;
         this.loki = loki;
     }
