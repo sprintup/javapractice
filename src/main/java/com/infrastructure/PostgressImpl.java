@@ -9,8 +9,10 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.javapractice.domain.Request.DeleteTodoRequest;
 import com.javapractice.gateways.ITodoRepository;
 
+// Since the implementation extends the shared interface, we know it has deleteTodo() method.
 @Repository
 public class PostgressImpl implements ITodoRepository {
 
@@ -45,26 +47,28 @@ public class PostgressImpl implements ITodoRepository {
         }
     }
 
+    // this is the implementation of the ILogger interface.
     @Override
-    public int deleteTodo(int id) {
-        try {
-            String sql = "DELETE FROM todos WHERE id = ?";
-            PreparedStatement pstmt = conn.prepareStatement(sql);
+    public String deleteTodo(DeleteTodoRequest request) {
+        // for example purposes only
+        return "Todo with ID " + request.id + " has been deleted.";
 
-            pstmt.setInt(1, id);
+        // try {
+        //     String sql = "DELETE FROM todos WHERE id = ?";
+        //     PreparedStatement pstmt = conn.prepareStatement(sql);
 
-            int affectedRows = pstmt.executeUpdate();
-            if (affectedRows > 0) {
-                System.out.println("Todo with ID " + id + " has been deleted.");
-                return 0;
-            } else {
-                System.out.println("Todo with ID " + id + " was not found.");
-                return 1;
-            }
+        //     pstmt.setInt(1, request.id);
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            return 1;
-        }
+        //     int affectedRows = pstmt.executeUpdate();
+        //     if (affectedRows > 0) {
+        //         return "Todo with ID " + request.id + " has been deleted.";
+        //     } else {
+        //         return "Todo with ID " + request.id + " was not found.";
+        //     }
+
+        // } catch (Exception e) {
+        //     e.printStackTrace();
+        //     return "Failed to delete todo with ID " + request.id;
+        // }
     }
 }

@@ -8,3 +8,7 @@ The use case is as follows:
 As a user
 When I delete an todo
 Then I want the item deleted and a log persisted to long term storage
+
+## Notes
+- ![interfaces response](assets/ch3-interface-used.png)
+- [PR - Ch 3: Interfaces implemented](https://github.com/sprintup/javapractice/pull/8/files)
